@@ -26,11 +26,13 @@ padding: 1%;
     background-size: cover !important;
 }
 .AD{
-background-color: aqua;
+background-color: rgba(0, 0, 0, 0.1);
 width: 100%;
-height: 170px;
+height: 300px;
 background-image: url(../Images/SmartSelect_20230426_234053_TikTok.jpg);
-background-size: cover;
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
 }
 .ADS{
     float: right;
