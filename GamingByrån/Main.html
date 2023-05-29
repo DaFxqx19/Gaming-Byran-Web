@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,44 +9,152 @@
     <link rel="stylesheet" href="./css/css.css">
     <link rel="stylesheet" href="./css/Main.css">
 </head>
-<body>
+
+<body onload="Random()">
     <div id="JOBBIG"></div>
-<div class="Rubrik">
-
-    <div class="HELLO"></div>
-
-<div class="bar">
-<a href="./Main.html" class="KnappBar">hem</a>
-<a href="./Spel.html"class="KnappBar" id="SpelKnapp">Spel?</a>
-<a href="./Videos.html"class="KnappBar" id="VideosKnapp">Videos!</a>
-<a href="./OmOss.html"class="KnappBar">Om oss</a>
-</div>
-
-</div>
-<div class="MainCont"> 
-
-<div class="REALBODY">
-    <div class="BANNER">
-        <iframe width="100%" height="350px" src="https://www.youtube.com/embed/V3jrlAIY-Jc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div id="JOBBIG2" onmouseenter="Insirational()">
+        <div id="JOBBIG3">
+            <p id="TEXTAREN"> </p>
+        </div>
     </div>
-<div class="INUTI">
-<div class="TITEL">NYHETER!</div>
-<div class="Newsfeed"></div>
-<div class="Newsfeed"></div>
+    <div class="Rubrik">
 
+        <div class="HELLO"></div>
 
-</div>
-</div>
-<div class="ADS">
+        <div class="bar">
+            <a href="./Main.html" class="KnappBar">hem</a>
+            <a href="./Spel.html" class="KnappBar" id="SpelKnapp">Spel?</a>
+            <a href="./Videos.html" class="KnappBar" id="VideosKnapp">Videos!</a>
+            <a href="./OmOss.html" class="KnappBar">Om oss</a>
+        </div>
 
-    <div class="AD"></div>
-    <div class="AD"></div>
-    <div class="AD"></div>
-</div>
+    </div>
+    <div class="MainCont">
 
-</div>
+        <div class="REALBODY">
+            <div class="BANNER">
+                <iframe width="100%" height="350px" src="https://www.youtube.com/embed/V3jrlAIY-Jc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="INUTI">
+
+                <div class="TITEL">NYHETER!</div>
+                <div class="Newsfeed" id="Newsfeed2"></div>
+                <div class="Newsfeed" id="Newsfeed1"></div>
+            </div>
+
+        </div>
+        <div class="ADS">
+
+            <div class="AD"></div>
+            <div class="AD"></div>
+            <div class="AD"></div>
+        </div>
+
+    </div>
 
 
 </body>
+
+<script>
+
+    function Random() {
+
+        var INTER = Math.floor(Math.random() * 11) + 1;
+
+
+        console.log(INTER);
+
+        var BILD = "./Images/" + INTER + ".webp";
+
+        var BILDEN = "url('" + BILD + "')";
+
+        //var DIV = document.getElementById(Roberto);
+        document.getElementById("JOBBIG2").style.backgroundImage = BILDEN;
+
+        //DIV.style.backgroundImage = BILD;
+
+        console.log(document.getElementById("JOBBIG2").style.backgroundImage);
+
+    }
+
+</script>
+<script type="text/javascript">
+
+    function Insirational() {
+
+        const Vitsar = [];
+        Vitsar.push("Råttan i byxan är hård som sten", "Jag äter hellre bajs med riktiga vänner, än en gourmė måltid med sanna vänner", "Har man fångat alla duvor har man fångat alla fiskar", "Dra aldrig råttan i svansen", "Ibland är det okej att känna sig som en taco", "Oavsett vad som händer, kom ihåg att fiskar äter 7 måltider per dag", "Är det verkligen värt det?", "Man kör hellre försvunna diamanten på månen än schack i Eskelstuna", "Inget i livet är gratis förrutom Fortnite på Epic games", "Man kan bygga Rom på en dag med rätt verktyg", "Michael Jordan föddes på en dag", "Förr eller senare kommer månen att krascha", "Tänk sig livet om inte golf spelades 1976", "Arbetsro är livets tangentbord", "Varje eluttag behöver elektricitet för att laddas");
+        var VILKEN = Math.floor(Math.random() * Vitsar.length);
+        var TEXTA = Vitsar[VILKEN];
+
+        document.getElementById("TEXTAREN").textContent = TEXTA;
+
+
+        if (VILKEN === 0) {
+            document.getElementById("TEXTAREN").style.fontSize = "1.9vmin";
+        }
+        else if (VILKEN === 1) {
+            document.getElementById("TEXTAREN").style.fontSize = "1.5vmin";
+        }
+        else if (VILKEN === 2) {
+            document.getElementById("TEXTAREN").style.fontSize = "1.7vmin";
+        }
+        else if (VILKEN === 3) {
+            document.getElementById("TEXTAREN").style.fontSize = "2.35vmin";
+        }
+        else if (VILKEN === 4) {
+            document.getElementById("TEXTAREN").style.fontSize = "1.9vmin";
+        }
+        else if (VILKEN === 5) {
+            document.getElementById("TEXTAREN").style.fontSize = "1.6vmin";
+        }
+        else if (VILKEN === 6) {
+            document.getElementById("TEXTAREN").style.fontSize = "2.35vmin";
+        }
+        else if (VILKEN === 7) {
+            document.getElementById("TEXTAREN").style.fontSize = "1.474vmin";
+        }
+        else if (VILKEN === 8) {
+            document.getElementById("TEXTAREN").style.fontSize = "1.75vmin";
+        }
+        else if (VILKEN === 9) {
+            document.getElementById("TEXTAREN").style.fontSize = "1.85vmin";
+        }
+        else if (VILKEN === 10){
+            document.getElementById("TEXTAREN").style.fontSize = "2.1vmin";
+        }
+        else if (VILKEN === 11) {
+            document.getElementById("TEXTAREN").style.fontSize = "1.89vmin";
+        }
+        else if (VILKEN === 12) {
+            document.getElementById("TEXTAREN").style.fontSize = "1.9vmin";
+        }
+        else if (VILKEN === 13) {
+            document.getElementById("TEXTAREN").style.fontSize = "2vmin";
+        }
+        else if (VILKEN === 14) {
+            document.getElementById("TEXTAREN").style.fontSize = "1.7vmin";
+        }
+ 
+
+        // switch (VILKEN) {
+        //     case 0:
+        //         document.getElementById("TEXTAREN").style.fontSize = "1.9vmin";
+        //     case 1:
+
+        //     case 2:
+        //         document.getElementById("TEXTAREN").style.fontSize = "1.6vmin";
+        //     case 3:
+
+    }
+
+
+
+
+
+</script>
 
 </html>

@@ -4,6 +4,16 @@
     width: 80%;
 padding: 1%;
 }
+html{
+    overflow-x: hidden;
+    /* scrollbar-base-color: aqua; */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+
 .INUTI{
     /* background-color: brown; */
     background: radial-gradient(circle, rgba(128,128,128,1) 35%, rgba(255,255,255,1) 68%);
@@ -17,7 +27,12 @@ padding: 1%;
     font-size: larger;
     text-shadow: 0px 0px 5px rgb(255, 247, 0);
 }
-
+#Newsfeed1{
+    background-image: url(../Images/nEWSfEED\ 1.png);
+}
+#Newsfeed2{
+    background-image: url(../Images/nEWSfEED\ 2.png);
+}
 
 .MainCont{
     display: flex !important;
@@ -26,12 +41,15 @@ padding: 1%;
     background-size: cover !important;
 }
 .AD{
-background-color: aqua;
+background-color: rgba(0, 0, 0, 0.425);
 width: 100%;
-height: 170px;
+height: 250px;
 background-image: url(../Images/SmartSelect_20230426_234053_TikTok.jpg);
-background-size: cover;
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
 }
+
 .ADS{
     float: right;
     flex-grow: 1;
@@ -63,4 +81,52 @@ background-size: cover;
     border-color: rgb(180, 180, 180);
     border-radius: 10px;
     padding: 1%;
+}
+.bar{
+    
+    margin: 0;
+    
+}
+#JOBBIG2{
+    width: 30vw;
+    height: 30vw;
+    /* background-image: url(../Images/FilipPrata1.png); */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 70vh;
+    left: 70vw;
+    position: fixed;
+    z-index: 10;
+}
+#JOBBIG2:hover{
+    top: 37.5vh;
+}
+#JOBBIG2:hover > div{
+    
+    transform: translateY(-50%);
+}
+#JOBBIG3{
+    width: 15vw;
+    height: 15vh;
+    float: right;
+    transform: translateY(80vh);
+    background-image: url(../Images/TextBubbla.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+	
+}
+#TEXTAREN{
+    /* transform: translateY(50vh);
+    transform: translateX(5vw); */
+    transform: translate(5vw,40%);
+    
+    width: 6vw;
+    height: 7vh;
+    /* background-color: aqua; */
+    /* font-size: 1.6vmin; */
+    /* font-size: 1.8vmin; */
+    /* display: table; */
 }
