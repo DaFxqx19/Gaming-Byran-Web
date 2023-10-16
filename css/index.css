@@ -1,113 +1,130 @@
 .REALBODY {
-    background-color: rgb(207, 207, 207);
-    min-height: fit-content;
-    width: 80%;
-    padding: 1%;
+  background-color: rgb(207, 207, 207);
+  min-height: fit-content;
+  width: 80%;
+  padding: 1%;
 }
 
 .INUTI {
-    /* background-color: brown; */
-    background: radial-gradient(circle, rgba(128, 128, 128, 1) 35%, rgba(255, 255, 255, 1) 68%);
-    height: fit-content;
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: rgb(180, 180, 180);
-    border-width: 5px;
-    font-size: larger;
-    text-shadow: 0px 0px 5px rgb(255, 247, 0);
+  /* background-color: brown; */
+  background: radial-gradient(
+    circle,
+    rgba(128, 128, 128, 1) 35%,
+    rgba(255, 255, 255, 1) 68%
+  );
+  height: fit-content;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: rgb(180, 180, 180);
+  border-width: 5px;
+  font-size: larger;
+  text-shadow: 0px 0px 5px rgb(255, 247, 0);
 }
 
-
 .MainCont {
-    display: flex !important;
-    min-height: fit-content !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
+  display: flex !important;
+  min-height: fit-content !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
 .AD {
-    /* background-color: rgba(0, 0, 0, 0.1); */
-    width: 100%;
-    height: 300px;
-    background-image: url(../Images/SmartSelect_20230426_234053_TikTok.jpg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-top: 10px;
-
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  width: 100%;
+  height: 300px;
+  background-image: url(../Images/SmartSelect_20230426_234053_TikTok.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 10px;
 }
 
 .ADSAREN {
-    float: right;
-    flex-grow: 1;
-    background-color: rgb(198, 198, 198);
-    /* padding-top: 42px;
+  float: right;
+  flex-grow: 1;
+  background-color: rgb(198, 198, 198);
+  /* padding-top: 42px;
     padding-bottom: 42px; */
-    /* background-image: url(../Images/LillGrenN.gif); */
-    background-position: center;
-    background-size: contain;
+  /* background-image: url(../Images/LillGrenN.gif); */
+  background-position: center;
+  background-size: contain;
 }
 
 .ADS {
-    /* background-color: aqua; */
-    /* background-image: url(../Images/metro-tiles-5efe44fc06495-1250.jpg); */
+  /* background-color: aqua; */
+  /* background-image: url(../Images/metro-tiles-5efe44fc06495-1250.jpg); */
 
-    background-image: -webkit-cross-fade(url('../Images/metro-tiles-5efe44fc06495-1250.jpg'),
-            url('../Images/2000px-gay_flag-svg.webp'),
-            20%) !important;
-    background-image: cross-fade(url('../Images/metro-tiles-5efe44fc06495-1250.jpg'),
-            url('../Images/2000px-gay_flag-svg.webp'),
-            20%);
-    background-image: url(../Images/metro-tiles-5efe44fc06495-1250.jpg);
-    background-position: top left;
-    background-size: 300px;
-    padding-top: 32px;
-    padding-bottom: 42px;
-    border-bottom-left-radius: 25px;
-    border-left-style: ridge;
-    border-bottom-style: ridge;
-    border-color: gray;
+  background-image: -webkit-cross-fade(
+    url("../Images/metro-tiles-5efe44fc06495-1250.jpg"),
+    url("../Images/2000px-gay_flag-svg.webp"),
+    20%
+  ) !important;
+  background-image: cross-fade(
+    url("../Images/metro-tiles-5efe44fc06495-1250.jpg"),
+    url("../Images/2000px-gay_flag-svg.webp"),
+    20%
+  );
+  background-image: url(../Images/metro-tiles-5efe44fc06495-1250.jpg);
+  background-position: top left;
+  background-size: 300px;
+  padding-top: 32px;
+  padding-bottom: 42px;
+  border-bottom-left-radius: 25px;
+  border-left-style: ridge;
+  border-bottom-style: ridge;
+  border-color: gray;
 }
 
 .Newsfeed {
-    width: 100%;
-    height: 396px;
-    top: 5%;
-    position: relative;
-    background-size: contain;
+  width: 100%;
+  height: 396px;
+  top: 5%;
+  position: relative;
+  background-size: contain;
 
-    background-color: aliceblue;
-    background-image: url(../Images/nEWSfEED\ 1.png);
-    background-position: top;
-    background-repeat: no-repeat;
-    border-style: groove;
-    margin-bottom: 10px;
-    border-color: rgb(180, 180, 180);
-    border-radius: 10px;
+  background-color: aliceblue;
+  background-image: url(../Images/nEWSfEED\ 1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50% 90%;
+  border-style: groove;
+  margin-bottom: 10px;
+  border-color: rgb(180, 180, 180);
+  border-radius: 10px;
 
-    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+#Newsfeed1 {
+  margin-bottom: 0 !important;
+}
+.TITEL {
+  margin-bottom: 1vh;
 }
 
 .BANNER {
-    background-color: rgb(0, 0, 0);
-    border-style: groove;
-    margin-bottom: 10px;
-    border-color: rgb(180, 180, 180);
-    border-radius: 10px;
-    padding: 1%;
+  background-color: rgb(0, 0, 0);
+  border-style: groove;
+  margin-bottom: 10px;
+  border-color: rgb(180, 180, 180);
+  border-radius: 10px;
+  padding: 1%;
 }
 
 .bottom {
-    height: 10vh;
-    background-image: -webkit-cross-fade(url('../Images/metro-tiles-5efe44fc06495-1250.jpg'),
-            url('../Images/2000px-gay_flag-svg.webp'),
-            20%) !important;
-    background-image: cross-fade(url('../Images/metro-tiles-5efe44fc06495-1250.jpg'),
-            url('../Images/2000px-gay_flag-svg.webp'),
-            20%);
-    background-image: url(../Images/metro-tiles-5efe44fc06495-1250.jpg);
-    background-position: top left;
-    background-size: contain;
+  height: 10vh;
+  background-image: -webkit-cross-fade(
+    url("../Images/metro-tiles-5efe44fc06495-1250.jpg"),
+    url("../Images/2000px-gay_flag-svg.webp"),
+    20%
+  ) !important;
+  background-image: cross-fade(
+    url("../Images/metro-tiles-5efe44fc06495-1250.jpg"),
+    url("../Images/2000px-gay_flag-svg.webp"),
+    20%
+  );
+  background-image: url(../Images/metro-tiles-5efe44fc06495-1250.jpg);
+  background-position: top left;
+  background-size: contain;
 }

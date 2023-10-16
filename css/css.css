@@ -1,8 +1,15 @@
+@font-face {
+  font-family: "Bones";
+  src: url(".");
+  src: url("./Warbones-RpM1V.otf") format("opentype"),
+    url("./Warbones-BWgeB.ttf") format("truetype");
+}
 * {
   margin: 0;
   box-sizing: border-box;
   color: rgb(18, 18, 18);
   transition: 1s;
+  font-family: "Bones";
 }
 
 body {
@@ -40,12 +47,26 @@ a:hover {
 }
 
 .HELLO {
-  background-image: url(../Images/GAMINGBYRÅN!.png);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.485),
+      rgba(106, 106, 106, 0.77),
+      rgba(104, 104, 104, 0.401),
+      rgba(216, 216, 216, 0.818)
+    ),
+    url(../Images/GamingLogo.png);
+
+  background-position: center;
   width: 100%;
   height: 10vh;
-  background-position: center;
-  background-size: cover;
+  background-position: 50% 48%;
+  background-size: 100% 100%, 90% 800%;
   background-repeat: no-repeat;
+  font-size: 5em;
+  text-align: center;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 .bar {
@@ -114,4 +135,7 @@ a:hover {
   rotate: 4;
   z-index: 100;
   rotate: 3deg;
+}
+.INUTI {
+  text-align: center;
 }
