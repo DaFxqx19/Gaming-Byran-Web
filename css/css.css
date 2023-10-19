@@ -36,7 +36,7 @@ a:hover {
   cursor: inherit;
   color: red;
   /* offset-x | offset-y | blur-radius | color */
-  text-shadow: 0px 0px 5px rgb(255, 217, 0);
+  text-shadow: 0px 0px 2px yellow, 0px 0px 20px yellow;
 }
 
 .Rubrik {
@@ -118,6 +118,11 @@ a:hover {
   border-left-style: solid;
   border-color: whitesmoke;
 }
+#ProjektKnapp {
+  border-right: 2px;
+  border-right-style: solid;
+  border-color: whitesmoke;
+}
 
 .MainCont {
   width: 100vw;
@@ -135,6 +140,12 @@ a:hover {
   rotate: 4;
   z-index: 100;
   rotate: 3deg;
+}
+#JOBBIG2 {
+  position: fixed;
+  z-index: 1000;
+  width: 50vw;
+  height: 50vh;
 }
 .INUTI {
   text-align: center;
