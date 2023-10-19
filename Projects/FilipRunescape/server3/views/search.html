@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Search Page</title>
+    </head>
+    <body>
+        <h1>You searched for something!</h1>
+        <button onclick='pageChange("upp")'>Page up</button>
+        <button onclick='pageChange("ner")'>Page down</button>
+        <div id="displayItems"></div>
+        <script>
+            const itemsDiv = document.getElementById("displayItems");
+
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const searchParam = urlParams.get("search");
+            const pageParam = Number(urlParams.get("page"));
+            let pageIndex = 0;
+            const pageChange = uppNer => {
+                if (uppNer === "upp") {
+                    pageIndex++;
+                } else {
+                    pageIndex = pageIndex - 1;
+                }
+                getSearch(searchParam, pageParam + pageIndex);
+            };
+
+            const AddToCart = async AddId => {
+                // alert(AddId);
+                const response = await fetch(
+                    `http://localhost:3000/addcart/${AddId}`,
+                    {
+                        method: "POST",
+                    }
+                );
+            };
+
+            const getSearch = async (searchParam, pageParam) => {
+                //console.log(page);
+                const response = await fetch(
+                    `http://localhost:3000/api/search/item/${searchParam}/${pageParam}`
+                );
+                const data = await response.json();
+
+                const items = data.items;
+                //console.log(data);
+                itemsDiv.innerHTML = "";
+                for (item of items) {
+                    itemsDiv.innerHTML += `<p>This is item ${item.name}</p><img src="${item.icon}"/> <button onclick="AddToCart(${item})"> Add to Cart </Button>`;
+                }
+            };
+
+            getSearch(searchParam, pageParam);
+        </script>
+    </body>
+</html>

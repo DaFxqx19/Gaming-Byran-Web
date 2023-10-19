@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Wabsida 1</title>
+    </head>
+    <body>
+        hejsan, det här är en websida
+        <input id="search" placeholder="search for an item" value="" />
+        <script>
+            const searchElement = document.getElementById("search");
+            searchElement.addEventListener("keypress", event => {
+                if (event.key === "Enter") {
+                    window.location.href = `http://localhost:3000/search/?search=${searchElement.value}&page=1`;
+                }
+            });
+        </script>
+    </body>
+</html>
